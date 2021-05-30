@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="C:\Users\Gaurav\Desktop\Wavefront 360\jquery.mobile-1.4.1.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+</head>
+<body>
+
+
+<div data-role="page" id="demo-page" data-url="demo-page">
+
+<a href="#left-panel" data-icon="gear" data-iconpos="notext" data-shadow="true" data-iconshadow="true" class="ui-btn-left ui-btn ui-icon-gear ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ">Settings</a>
+
+<center>
+<h2>Wavefront</h2>
+</center>
+<a href="#right-panel" data-icon="grid" data-iconpos="notext" data-shadow="true" data-iconshadow="true" class="ui-btn-right ui-btn ui-icon-grid ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ">Music Player</a>
+<div role="main" class="ui-content">
+
+
+<div data-role="tabs">
+<div class="ui-body-b ui-body">
+    <div data-role="navbar">
+        <ul>
+          <li><a href="#one" data-theme="a" data-ajax="false" data-icon="bullets">Music Library</a></li>
+          <li><a href="#two" data-theme="a" data-ajax="false" data-icon="search">Hunt</a></li>
+          <li><a href="#three" data-theme="a" data-ajax="false" data-icon="info">Notifications</a></li>
+          <li><a href="#five" data-theme="a" data-ajax="false" data-icon="bars">My Shelf</a></li>
+        </ul>
+</div>    
+</div>
+
+    <div id="one" class="ui-content">
+<a href="#popupMenu" data-rel="popup" data-transition="slideup" class="ui-mini ui-btn-right ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-action ui-btn-icon-left ui-btn-a">Sort By</a>
+<div data-role="popup" id="popupMenu" data-theme="b">
+        <ul data-role="listview" data-inset="true" style="min-width:210px;">
+            <li data-role="list-divider">Sort By</li>
+            <li><a href="#">Artist</a></li>
+            <li><a href="#">Album</a></li>
+            <li><a href="#">Title</a></li>
+            <li><a href="#">Duration</a></li>
+            <li><a href="#">Favourite</a></li>
+            <li><a href="#">Frequent</a></li>
+            <li><a href="#">Recent</a></li>
+        </ul>
+</div>
+
+<table>
+<tr>
+<td>    
+<form>
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Location Preference</legend>
+        <input type="checkbox" name="checkbox-h-2a" id="checkbox-h-2a" data-mini="true">
+        <label for="checkbox-h-2a">Wavefront</label>
+        <input type="checkbox" name="checkbox-h-2b" id="checkbox-h-2b" data-mini="true">
+        <label for="checkbox-h-2b">From SD Card</label>
+    </fieldset>
+</form>
+</td>
+<td>
+</td>   
+<td>    
+<form>
+    <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Media Type</legend>
+        <input type="checkbox" name="checkbox-h-2a" id="checkbox-h-2a" data-mini="true">
+        <label for="checkbox-h-2a">Audio</label>
+        <input type="checkbox" name="checkbox-h-2b" id="checkbox-h-2b" data-mini="true">
+        <label for="checkbox-h-2b">Video</label>
+    </fieldset>
+</form>
+</td>
+</tr>
+</table>
+
+<ul data-role="listview" data-inset="true" data-filter="true" data-theme="b">
+    <li><a href="#">
+        <img src="../_assets/img/album-bb.jpg">
+    <h2>Broken Bells</h2>
+    <p>Broken Bells</p></a>
+    </li>
+    <li><a href="#">
+        <img src="../_assets/img/album-hc.jpg">
+    <h2>Warning</h2>
+    <p>Hot Chip</p></a>
+    </li>
+    <li><a href="#">
+        <img src="../_assets/img/album-p.jpg">
+    <h2>Wolfgang Amadeus Phoenix</h2>
+    <p>Phoenix</p></a>
+    </li>
+</ul>
+
+</div>
+
+
+
+
+
+
+    <div id="two" class="ui-content">
+<form>
+<table data-role="table" id="table-custom-2" data-mode="columntoggle" data-filter="true" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="b" data-column-btn-text="Columns.." data-column-popup-theme="a">
+         <thead>
+           <tr class="ui-bar-d">
+             <th data-priority="2">S.No</th>
+             <th>Title</th>
+             <th data-priority="3">Artist</th>
+             <th data-priority="1">Movie / Album</th>
+             <th data-priority="5">Duration</th>
+             <th data-priority="6">Rating</th>
+             <th data-priority="7">Year Of Release</th>
+          </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <th>1</th>
+             <td><a href="http://en.wikipedia.org/wiki/Citizen_Kane" data-rel="external">Citizen Kane</a></td>
+             <td>1941</td>
+             <td>100%</td>
+             <td>74</td>
+           </tr>
+           <tr>
+             <th>2</th>
+             <td><a href="http://en.wikipedia.org/wiki/Casablanca_(film)" data-rel="external">Casablanca</a></td>
+             <td>1942</td>
+             <td>97%</td>
+             <td>64</td>
+           </tr>
+           <tr>
+             <th>3</th>
+             <td><a href="http://en.wikipedia.org/wiki/The_Godfather" data-rel="external">The Godfather</a></td>
+             <td>1972</td>
+             <td>97%</td>
+             <td>87</td>
+           </tr>
+           <tr>
+             <th>4</th>
+             <td><a href="http://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)" data-rel="external">Gone with the Wind</a></td>
+             <td>1939</td>
+             <td>96%</td>
+             <td>87</td>
+           </tr>
+           <tr>
+             <th>5</th>
+             <td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Lawrence of Arabia</a></td>
+             <td>1962</td>
+             <td>94%</td>
+             <td>87</td>
+           </tr>
+           <tr>
+             <th>6</th>
+             <td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb</a></td>
+             <td>1964</td>
+             <td>92%</td>
+             <td>74</td>
+           </tr>
+           <tr>
+             <th>7</th>
+             <td><a href="http://en.wikipedia.org/wiki/The_Graduate" data-rel="external">The Graduate</a></td>
+             <td>1967</td>
+             <td>91%</td>
+             <td>122</td>
+           </tr>
+           <tr>
+             <th>8</th>
+             <td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">The Wizard of Oz</a></td>
+             <td>1939</td>
+             <td>90%</td>
+             <td>72</td>
+           </tr>
+           <tr>
+             <th>9</th>
+             <td><a href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" data-rel="external">Singin' in the Rain</a></td>
+             <td>1952</td>
+             <td>89%</td>
+             <td>85</td>
+           </tr>
+           <tr>
+             <th>10</th>
+             <td class="title"><a href="http://en.wikipedia.org/wiki/Inception" data-rel="external">Inception</a></td>
+             <td>2010</td>
+             <td>84%</td>
+             <td>78</td>
+           </tr>
+         </tbody>
+       </table>
+
+</form>
+    </div>
+
+<div id="three" class="ui-content">
+
+<ul data-role="listview" data-inset="true">
+    <li><a href="#">
+        <img src="../_assets/img/album-bb.jpg">
+    <h2>Broken Bells</h2>
+    <p>Broken Bells</p></a>
+    </li>
+    <li><a href="#">
+        <img src="../_assets/img/album-hc.jpg">
+    <h2>Warning</h2>
+    <p>Hot Chip</p></a>
+    </li>
+    <li><a href="#">
+        <img src="../_assets/img/album-p.jpg">
+    <h2>Wolfgang Amadeus Phoenix</h2>
+    <p>Phoenix</p></a>
+    </li>
+</ul>
+
+</div>
+
+</div>
+
+
+
+            
+     
+    </div><!-- /content -->
+    <div data-role="panel" id="left-panel" data-mini="true">
+<li><b>Settings</b></li>
+<ul data-role="listview" data-inset="true" data-mini="true">
+    <li data-icon="star"><a href="#">Change Theme</a></li>
+    <li data-icon="user"><a href="#">Signup </a></li>
+    <li data-icon="delete"><a href="#">Clear All</a></li>
+</ul>
+<li><b>Notification Settings</b></li>
+<table>
+<tr>
+<td>
+Get Notifications
+</td>
+<td>
+<form>
+    <div class="ui-field-contain">
+        <select name="flip-6" id="flip-6" data-role="flipswitch" data-mini="true">
+            <option value="off">Off</option>
+            <option value="on">On</option>
+        </select>
+    </div>
+</form>
+</td>
+</tr>
+<tr>
+<td>
+<form>
+    <fieldset data-role="controlgroup" data-mini="true">
+        <legend>Notification Type</legend>
+        <input type="checkbox" name="checkbox-t-2a" id="checkbox-t-2a" data-theme="b">
+        <label for="checkbox-t-2a">By Genre</label>
+        <input type="checkbox" name="checkbox-t-2b" id="checkbox-t-2b" data-theme="a">
+        <label for="checkbox-t-2b">Artist</label>
+        <input type="checkbox" name="checkbox-t-2c" id="checkbox-t-2c" data-theme="b">
+        <label for="checkbox-t-2c">Composer</label>
+        <input type="checkbox" name="checkbox-t-2d" id="checkbox-t-2d" data-theme="a">
+        <label for="checkbox-t-2d">All</label>
+    </fieldset>
+</form>
+</td>
+</tr>
+<tr>
+<td>
+<div data-role="collapsibleset" data-theme="a" data-content-theme="b" data-mini="true">
+    <div data-role="collapsible" data-mini="true">
+    <h2>Reminder Schedule</h2>
+<a href="#popupMenu" data-mini="true" data-rel="popup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-a">Days</a>
+<div data-role="popup" id="popupMenu1" data-theme="b" data-mini="true">
+        <form>
+    <fieldset data-role="controlgroup">
+        <legend>Day</legend>
+        <input type="checkbox" name="checkbox-t-2aa" id="checkbox-t-2aa" data-theme="b">
+        <label for="checkbox-t-2aa">Sunday</label>
+        <input type="checkbox" name="checkbox-t-2bb" id="checkbox-t-2bb" data-theme="b">
+        <label for="checkbox-t-2bb">Monday</label>
+        <input type="checkbox" name="checkbox-t-2cc" id="checkbox-t-2cc" data-theme="b">
+        <label for="checkbox-t-2cc">Tuesday</label>
+        <input type="checkbox" name="checkbox-t-2dd" id="checkbox-t-2dd" data-theme="b">
+        <label for="checkbox-t-2dd">Wednesday</label>
+        <input type="checkbox" name="checkbox-t-2ee" id="checkbox-t-2ee" data-theme="b">
+        <label for="checkbox-t-2ee">Thursday</label>
+        <input type="checkbox" name="checkbox-t-2ff" id="checkbox-t-2ff" data-theme="b">
+        <label for="checkbox-t-2ff">Friday</label>
+        <input type="checkbox" name="checkbox-t-2gg" id="checkbox-t-2gg" data-theme="b">
+        <label for="checkbox-t-2gg">Saturday</label>
+    </fieldset>
+</form>
+</div>
+<form>        
+<label for="time-2">hh:mm</label>
+    <input type="time" data-clear-btn="true" data-mini="true" name="time-2" id="time-2" value="">
+</form>
+    </div>
+    <div data-role="collapsible" data-mini="true">
+    <h2>Reminder Tone</h2>
+<form>    
+    <label for="file-2">Choose File</label>
+     <input type="file" data-clear-btn="true" name="file-2" id="file-2" value="">
+</form>
+    </div>
+    </div>
+</td>
+</tr>
+</table>
+    </div><!-- /panel -->
+    
+<div data-role="panel" id="right-panel" data-display="overlay" data-position="right">
+        <ul data-role="listview" data-icon="false">
+            <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+            <li data-role="list-divider">Music Player</li>
+            <li><table><tr><td><img height="90" width="90" src="data:image/jpeg;base64,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" alt="Music"></td><td>Song Name<br>Artist<br>Album</td></tr></table></li>            
+            <li>00:00
+            <form>
+    <input type="range" name="slider-4" id="slider-4" data-mini="true" min="0" max="100" value="0">
+</form></li>
+            
+<li><form>
+<table>
+<tr>
+<td>    
+<div class="ui-input-btn ui-btn ui-corner-all ui-shadow">
+       <font face="webdings">9</font>
+    <input type="button" data-enhanced="true" value="Input value">    
+</div>
+</td>
+<td>
+    <div class="ui-input-btn ui-btn ui-corner-all ui-shadow">
+       <font face="webdings"><</font>
+    <input type="button" data-enhanced="true" value="Input value">
+</div>
+</td>
+<td>    
+    <div class="ui-input-btn ui-btn ui-corner-all ui-shadow">
+       <font face="webdings">4</font>
+    <input type="button" data-enhanced="true" value="Input value">
+</div>
+</td>
+<td>    
+    <div class="ui-input-btn ui-btn ui-corner-all ui-shadow">
+       <font face="webdings">;</font>
+    <input type="button" data-enhanced="true" value="Input value">
+</div>
+</td>
+<td>    
+<div class="ui-input-btn ui-btn ui-corner-all ui-shadow">
+       <font face="webdings">:</font>
+    <input type="button" data-enhanced="true" value="Input value">
+</div>
+</td>
+</tr>
+</table>
+</form>
+<table>
+<tr>
+<td>
+<a href="#" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-notext">Star Icon</a>
+</td>
+<td>
+<a href="#" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-notext">Star Icon</a>
+</td>
+<td>
+<a href="#" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-notext">Star Icon</a>
+</td>
+<td>
+<a href="#" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-notext">Star Icon</a>
+</td>
+<td>
+<a href="#" class="ui-btn ui-corner-all ui-icon-star ui-btn-icon-notext">Star Icon</a>
+</td>
+</tr>
+</table>
+</li>        
+<hr>
+<table>
+<tr>
+<td>
+<a href="#" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext">Audio Icon</a>
+</td>
+<td>
+<form>
+   <input type="range" name="slider-4" id="slider-4" data-mini="true" min="0" max="100" value="50" data-highlight="true">
+</form>
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td>
+ <input type="button" data-theme="b" value="" data-icon="recycle">
+</td>
+<td>
+ <input type="button" data-theme="b" value="" data-icon="back">
+</td>
+</ul>
+    </div><!-- /panel -->
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
